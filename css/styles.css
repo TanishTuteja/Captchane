@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: larger;
+  text-align: center;
+  color: white;
+  background-color: coral;
+  padding: 8px;
+}
+
+.service {
+  display: flex;
+  height: auto;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+  width: 500px;
+  flex-direction: row;
+  background-color: white;
+}
+.serviceIcon {
+  width: 64px;
+  height: 64px;
+  flex: 0 1 64px;
+}
+
+.serviceContent {
+  flex: 1 1 0px;
+  margin-left: 16px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.serviceTop {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex: 0 1;
+}
+
+.autoCaptcha {
+  flex: 1 1;
+  margin-top: 8px;
+}
+
+.autoLogin {
+  flex: 1 1;
+  margin-top: 12px;
+}
+
+.serviceTitle {
+  font-size: large;
+  flex: 1 1;
+  vertical-align: top;
+}
+
+.switchLabel {
+  vertical-align: middle;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 18px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(214, 186, 145);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  vertical-align: middle;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  /*left: 4px;
+  bottom: 4px;*/
+  top: -1px;
+  background-color: white;
+  border-color: #2196f3;
+  border-width: 0.1px;
+  border-style: solid;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  vertical-align: middle;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked:enabled + .slider {
+  background-color: rgb(84, 214, 24);
+}
+
+input:disabled + .slider {
+  background-color: rgb(116, 150, 145);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.credentials {
+  margin-top: 16px;
+}
+
+input.username,
+input.password {
+  margin-top: 4px;
+  width: 32%;
+  margin-right: 8px;
+}
+
+.credentialsStatus {
+  margin-top: 8px;
+}
